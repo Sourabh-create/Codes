@@ -2,17 +2,28 @@ import java.util.Scanner;
 public class Main {
    public static void main(String args[]){
       Scanner sc = new Scanner(System.in);
-      int a, b, hcf = 0;
+      int a, b;
+      int n;
       System.out.println("Enter first number :: ");
       a = sc.nextInt();
       System.out.println("Enter second number :: ");
       b = sc.nextInt();
       
-      for(int i=1;i<a || i<b; i++)
+      if(a<b)
       {
-          if( a%i == 0 && b%i == 0 )
-          hcf = i;
+      n=a;
       }
-        System.out.println("HCF of given two numbers is : " +hcf);
+      else{
+      n=b;
+      }
+      
+      
+      for(int i=n;i>=1; i--)
+      {
+          if( a%i == 0 && b%i == 0 ){
+              System.out.println(i);
+              break;
+          }
       }
    }
+}
