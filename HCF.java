@@ -21,7 +21,7 @@ public class Main {
       for(int i=n;i>=1; i--)
       {
           if( a%i == 0 && b%i == 0 ){
-              System.out.println(i);
+              System.out.println("HCF of Given No. is :" +i);
               break;
           }
       }
